@@ -18,7 +18,7 @@ function App() {
 
   function addColor() {
     if (numOfVisibleColors >= 5) {
-      window.alert("You've reached the max num of colors");
+      window.alert("There is a maximum of 5 colors");
       return;
     }
 
@@ -27,21 +27,12 @@ function App() {
 
   function removeColor() {
     if (numOfVisibleColors <= 2) {
-      window.alert("You need a minimum of 2 colors");
+      window.alert("There is a minimum of 2 colors");
       return;
     }
 
     setNumOfVisibleColors(numOfVisibleColors - 1);
   }
-
-  // function removeColor() {
-  //   if (numOfVisibleColors <= 2) {
-  //     window.alert("There is a minimum of 2 colors");
-  //     return;
-  //   }
-
-  //   setNumOfVisibleColors(numOfVisibleColors - 1);
-  // }
 
   return (
     <div className='wrapper'>
